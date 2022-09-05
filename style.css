@@ -1,0 +1,36 @@
+.wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    margin-left: 30px;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a:hover{
+    color: red;
+}
+
+.login-buttons a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.login-buttons a:hover{
+    color: red;
+}
+
+.box-model {
+    border: 3px solid red;
+    padding: 10px;
+    margin: 10px;
+}
