@@ -1,3 +1,75 @@
+@media screen and (max-width: 700px) { 
+    .wrapper{
+        width: 90% !important;
+        margin: 0 auto !important;
+
+
+    }
+    nav a{
+        text-decoration: none !important;
+        color: black !important;
+        margin-left: 5vw !important;
+    }
+    
+    .nav-container{
+        display: flex !important;
+        justify-content: space-around !important;
+        align-items: center !important;
+    }
+    
+    nav a:hover{
+        color: red !important;
+    }
+    
+    .login-buttons a{
+        margin-left: 10vw !important;
+        text-decoration: none !important;
+        color: black !important;
+    }
+    
+    .login-buttons a:hover{
+        color: red !important;
+    }
+    
+    .box-model {
+        border: 0.9vw solid red !important;
+        padding: 0.9vw !important;
+        margin: 5vw !important;
+    }
+    
+    .container {
+        display: flex !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
+        border-style: dashed !important;
+        
+    }
+    
+    .container {
+        display: flex !important;
+        justify-content: space-between !important;
+        margin: 10vw !important;
+        flex-wrap:wrap !important;
+    }
+    
+    .footer {
+        text-align: center !important;
+        font-size: 50% !important;
+        padding: 5vw !important;
+    }
+    
+    .footer img {
+        margin: 1vw !important;
+    }
+    
+    .box {
+        flex:1 0 50% !important;
+    }
+    
+    .footer {
+        flex: 1 0 100% !important;
+    }
+}
 .wrapper{
     width: 80%;
     margin: 0 auto;
@@ -6,7 +78,7 @@
 nav a{
     text-decoration: none;
     color: black;
-    margin-left: 30px;
+    margin-left: 15vw;
 }
 
 .nav-container{
@@ -20,7 +92,7 @@ nav a:hover{
 }
 
 .login-buttons a{
-    margin-left: 10px;
+    margin-left: 5vw;
     text-decoration: none;
     color: black;
 }
@@ -30,9 +102,27 @@ nav a:hover{
 }
 
 .box-model {
-    border: 3px solid red;
-    padding: 10px;
-    margin: 10px;
+    border:2vw 1 solid red;
+    padding: 0.7vw;
+    margin: 0.5vw;
+}
+
+.round {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-style: dashed;
+    }
+
+.round {
+    display: flex;
+    justify-content: space-between;
+    margin: 5vw;
+    flex-wrap:wrap;
+}
+
+.box1 {
+    flex:1 0 30%;
 }
 
 .container {
@@ -46,7 +136,7 @@ nav a:hover{
 .container {
     display: flex;
     justify-content: space-between;
-    margin: 5px;
+    margin: 2vw;
     flex-wrap:wrap;
 }
 
@@ -63,3 +153,27 @@ margin: 1vw;
 .box {
     flex:1 0 25%;
 }
+
+.footer1 {
+    text-align: center;
+    font-size: 50%;
+    padding: 5vw;
+}
+
+.box2 {
+    flex:1 0 10%;
+}
+
+.footer1 img {
+    margin: 7vw;
+    }
+ 
+.footer1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5vw;
+    flex-wrap:wrap;
+    padding:-1vw;
+}    
+
+p {text-align: center;}
