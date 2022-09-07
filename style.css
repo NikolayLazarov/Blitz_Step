@@ -166,6 +166,7 @@ margin: 1vw;
 
 .footer1 img {
     margin: 7vw;
+    margin-bottom: 0vw
     }
  
 .footer1 {
@@ -176,4 +177,14 @@ margin: 1vw;
     padding:-1vw;
 }    
 
+.thatimage
+{
+    width: 100vw;
+    height: auto;
+}
 p {text-align: center;}
+
+.titles {
+    margin: 0;
+    font-size: 4vw
+}
