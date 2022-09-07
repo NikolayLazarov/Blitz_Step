@@ -1,0 +1,525 @@
+@font-face {
+    font-family: SourceSansLight;;
+    src: url(../fonts/source-sans-pro/SourceSansPro-Semibold.otf);
+}
+@font-face {
+    font-family: SourceSans;;
+    src: url(../fonts/source-sans-pro/SourceSansPro-Bold.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: SourceSansLight;
+}
+
+.map{
+    background: url('../Images/bg-mob.jpg');
+}
+
+@media screen and (max-width: 700px) {
+
+    .nav-container {
+        height: 12vw !important;
+        display: flex !important;
+        position: relative !important;
+        bottom: 0 !important;
+        width: 100% !important;
+        border: 1vw solid #114C59;
+        margin-left: -2vw !important;
+        background-color: #114C59;
+        justify-content: center !important;
+        z-index: 2;
+    }
+
+    .login-buttons {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly !important;
+    }
+
+    .navSocialB {
+        width: 15vw !important;
+        height: 14vw !important;
+        background-color: transparent;
+        border: none;
+        display: flex !important;
+        visibility: visible !important;
+    }
+
+   /* .navSocialB:hover {
+        background-color:#6ba48b;
+    }
+
+    .navGoB:hover {
+        background-color:#6ba48b;
+    }
+
+    .navProfileB:hover {
+        background-color:#6ba48b;
+    }*/
+
+    .navProfileB {
+        width: 15vw !important;
+        height: 14vw !important;
+        background-color: transparent;
+        display: flex !important;
+        visibility: visible !important;
+        border-right: 3vw 1vw #006340;
+    }
+
+    .navGoB {
+        width: 15vw !important;
+        height: 14vw !important;
+        visibility: visible !important;
+        display: flex !important;
+        background-color: transparent;
+        border: none;
+    }
+
+    .icon {
+        width: 8vw !important;
+        display: flex !important;
+        visibility: visible !important;
+        margin: auto;
+    }
+
+    .icon:hover {
+        filter: brightness(150%)
+    }
+
+    .signB { 
+        margin: auto !important;
+        visibility: hidden;
+        display: none !important;
+    }
+
+    .logoNav {
+        visibility: hidden;
+        display: none !important;
+    }
+
+    .statsSection {
+        display: flex !important;
+        position: relative !important;
+        margin: auto !important;
+        width: 100% !important;
+        margin-top: calc((100vh - 50vh)/2) !important;
+    }
+
+    .todayPie {
+        height: 25vw !important;
+        width: 40vw !important;
+        margin: 4vw !important;
+    }
+
+    .weekPie {
+        height: 25vw !important;
+        width: 40vw !important;
+        margin: 4vw !important;
+    }
+
+    .monthPie {
+        height: 25vw !important;
+        width: 40vw !important;
+        margin: 4vw !important;
+    }
+
+    .profileImg {
+        width: 50vw !important;
+        border-radius: 50% !important;
+        display: flex !important;
+        margin: auto !important;
+        margin-bottom: calc((50vh - 44vh)/2) !important;
+    }
+
+    .profileSection {
+        justify-content: center !important;
+        width: 100% !important;
+        margin-top: 10vw !important;
+        margin-left: 0vw !important;
+        position: relative !important;
+    }
+
+    .profileInfo {
+        position: absolute !important;
+        width: 100% !important;
+        height: 60vh !important;
+    }
+
+    .pInfoSection {
+        position: relative !important;
+        height: 20vw !important;
+        border-bottom: 1vw solid #7CBC9F !important;
+        display: flex !important;
+        visibility: visible !important;
+        margin-right: 0vw !important;
+        z-index: 1 !important;
+    }
+
+    .pInfoIcon {
+        display: flex !important;
+        visibility: visible !important;
+        max-height: 50% !important;
+        max-width: 100% !important;
+        margin-top: 5vw !important;
+        margin-left: 5vw !important;
+    }
+
+    .pInfoText {
+        color: #114C59;
+        font-size: 6vw !important;
+        position: relative !important;
+        text-align: center !important;
+        margin-left: 10vw !important;
+        margin-top: 10vw !important;
+    }
+
+    .percent {
+        font-size: medium !important;
+        text-align: center  !important;
+        margin-top: -10vw !important;
+        margin-bottom: 35vw !important;
+    }
+
+    .statsRange {
+        font-size: larger !important;
+    }
+
+    .hidden {
+        display: none;
+        visibility: hidden;
+    }
+
+    .QR {
+        display: flex !important;
+        visibility: visible !important;
+        margin-top: 40vw !important;
+        width: 10vw !important;
+    }
+}
+
+html, body{
+    scroll-behavior: smooth;
+}
+
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav a{
+    text-decoration: none;
+    color: 3d3d3d;
+}
+
+.nav-container{
+    margin-left: -1vw;
+    margin-right: -1vw;
+    margin-top: -0.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4vw;
+    font-family: SourceSansLight;
+    font-size: large;
+    box-shadow: 0px 4px 5px #114C5925;
+    position: fixed bottom 0;
+}
+
+.icon {
+    width: 0vw;
+    display: none;
+    visibility: hidden;
+}
+
+.navGoB {
+    display: none;
+    visibility: hidden;
+}
+
+.navSocialB {
+    display: none;
+    visibility: hidden;
+}
+
+.navProfileB {
+    display: none;
+    visibility: hidden;
+}
+
+.logoNav {
+    margin-left: 4vw;
+    width: 8vw;
+}
+
+.navB {
+    height: 4vw;
+}
+
+nav a:hover{
+    background-color: #114C5910;
+    color: #7CBC9F;
+}
+
+.login-buttons a{
+    text-decoration: none;
+    color: #114C59;
+}
+
+.login-buttons a:hover{
+    color: red;
+}
+
+.signB {
+    margin-right: 2vw;
+}
+
+.box-model {
+    border: 3px solid red;
+    padding: 10px;
+    margin: 10px;
+}
+
+.profileSection {
+    float: left;
+    margin-left: 2vw;
+    margin-top: 2.5vw;
+    height: 40vw;
+    width: 25vw;
+}
+
+.pInfoSection {
+    border-bottom: 0.2vw solid #7CBC9F;
+    display: flex !important;
+    visibility: visible !important;
+    margin-right: 2vw;
+}
+
+.profileImg {
+    width: 15vw;
+    border-radius: 20%;
+}
+
+.pInfoText {
+    margin-top: 1vw;
+    margin-left: 1vw;
+}
+
+.pInfoIcon {
+    max-height: 2.5vw;
+    max-width: 2.5vw;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+}
+
+.profileInfo {
+    line-height: 2vw;
+    font-size: 1.5vw;
+    font-family: SourceSansLight;
+}
+
+.pInfoIcon {
+    max-width: 50%;
+}
+
+.socialSection {
+    margin-top: 45vw;
+    height: 50vw;
+    background-color: #7CBC9F;
+}
+
+.statsSection {
+    margin-top: 2vw;
+    margin-right: 4vw;
+    float: right;
+    width: 60vw; 
+    height: 40vw;
+  }
+
+
+.todayPie {
+    float: left;
+    margin: 2vw;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+   
+    background: conic-gradient(
+        #114C59 0deg 290deg,
+        #7CBC9F 0deg 10deg
+    );
+/*    filter: drop-shadow(5px 7px 5px #3d3d3d50); */
+}
+
+
+.weekPie     {
+    float: left;
+    margin: 2vw;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+   
+    background: conic-gradient(
+      #114C59 0deg 350deg,
+      #7CBC9F 0deg 10deg
+    );
+/*    filter: drop-shadow(5px 7px 5px #3d3d3d50); */
+}
+
+.monthPie {
+    float: left;
+    margin: 2vw;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+   
+    background: conic-gradient(
+        #114C59 0deg 80deg,
+        #7CBC9F 0deg 10deg
+    );
+ /*   filter: drop-shadow(5px 7px 5px #3d3d3d50); */
+}
+
+.percent {
+    margin: 0%;
+    font-family: SourceSans;
+    color: #114C59;
+    margin-left: -1vw;
+    margin-top: -1vw;
+    font-size: larger;
+}
+
+.statsRange {
+    font-family: SourceSans;
+    font-size: 3vw;
+    margin-top: 15vw;
+    color: #114C59;
+    text-align: center;
+}
+
+.footsteps {
+    font-size: 3vw;
+    font-family: SourceSans;
+    color: #114C59;
+}
+
+.webGo {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.mainB {
+    border-color: #7CBC9F;
+    border-width: 2vw;
+    display: flex;;
+    margin: auto;
+    width: 50vw;
+    height: 50vw;
+    border-radius: 100%;
+    text-align: center;
+    background-color: white;
+    font-family: SourceSansLight;
+    justify-content: center;
+    font-size: 25vw;
+    color: #114C59;
+    margin-top: calc((100vh - 50vw)/2);
+    margin-bottom: 0vw;
+    position: relative;
+    z-index: 2;
+    line-height: 45vw;
+
+}
+
+.mainB.in-run{
+    font-size: 40px;
+}
+
+.mainBAnim {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 50vw;
+    height: 50vw;
+    margin-top: calc(-50vw - 3px);
+    border: 3px solid #7CBC9F;
+    animation: BUTTON-ANIM 2s infinite;
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes BUTTON-ANIM {
+    0% {
+        width: 50vw;
+        height: 50vw;
+        margin-top: calc(-50vw - 3px);
+    }
+    100% {
+        width: 60vw;
+        height: 60vw;
+        margin-top: calc(-55vw - 3px);
+        opacity: 0;
+    }
+}
+
+.heyu {
+    color: #1C2026;
+    color: #FFBD59;
+    color: #E2E5EA;
+    color: #114C59;
+    color: #7CBC9F;
+
+}
+
+#register{
+    width: 80%;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+#register .form-cont{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#register .form-cont label{
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 2px;
+}
+
+#register .form-cont input{
+    width: 100%;
+    height: 30px;
+    display: inline-block;
+    border: none;
+    background: transparent;
+    border-bottom: 1px #CCC solid;
+    outline: none;
+}
+
+#register .form-cont input:focus{
+    border-bottom-color: #006340;
+}
+
+#register h2{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#register .submit-btn{
+    width: 100%;
+    height: 45px;
+    background: #7CBC9F;
+    color: #FFF;
+    border: none;
+}
+
+.QR {
+    display: none;
+    visibility: hidden;
+}

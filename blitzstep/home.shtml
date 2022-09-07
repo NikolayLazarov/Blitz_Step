@@ -1,0 +1,21 @@
+<!--#include file="./partials/header.shtml" -->
+
+    <body>
+        <div class="wrapper header-container">
+            <div class="nav-container">
+                <div>
+                    <img class="logoNav" src="./assets/Images/BlitzLogoTransparent.png" alt="">
+                </div>
+                <nav>
+                </nav>
+                <div class="login-buttons">
+                    <a class="signB" href="login.shtml">LogIn</a>
+                    <a class="signB" href="register.shtml">SignUp</a>
+                </div>
+            </div>
+        </div>
+
+        <script src="./js/jquery.js"></script>
+        <script src="./js/script.js"></script>
+    </body>
+</html>

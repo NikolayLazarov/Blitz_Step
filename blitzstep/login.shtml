@@ -1,0 +1,37 @@
+<!--#include file="./partials/header.shtml" -->
+
+        <div id="profile" class="wrapper header-container">
+            <div class="nav-container">
+                <div>
+                    <img class="logoNav" src="assets/Images/BlitzLogoTransparent.png" alt="">
+                </div>
+                <div class="login-buttons">
+                    <a class="navGoB" href="index.shtml"><img id="selectedH" class="icon" src="assets/Images/HomeIcon.png" alt=""></a>
+                    <a class="navSocialB" href="social.shtml"><img id="selectedG" class="icon" src="assets/Images/GoIcon.png" alt=""></a>
+                    <a class="navProfileB" href="profile.shtml"><img id="selectedP" class="icon" src="assets/Images/ProfileIcon.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <section id="register">
+
+            <h2>Вход</h2>
+
+            <form id="login_form">
+
+                <div class="form-cont">
+                    <label>Електронна поща</label>
+                    <input type="text" id="email">
+                </div>
+
+                <div class="form-cont">
+                    <label>Парола</label>
+                    <input type="password" id="password">
+                </div>
+
+                <input type="submit" class="submit-btn" value="Влизане">
+
+            </form>
+        </section>
+
+<!--#include file="./partials/footer.shtml" -->

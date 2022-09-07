@@ -1,0 +1,32 @@
+<!--#include file="./partials/header.shtml" -->
+
+    <body>
+        <div id="profile" class="wrapper header-container">
+            <div class="nav-container">
+                <div>
+                    <img class="logoNav" src="assets/Images/BlitzLogoTransparent.png" alt="">
+                </div>
+                <div class="login-buttons">
+                    <a class="signB" href="Home.html">SignOut</a>
+                    <a class="navGoB" href="index.shtml"><img id="selectedH" class="icon" src="assets/Images/HomeIcon.png" alt=""></a>
+                    <a class="navSocialB" href="social.shtml"><img id="selectedG" class="icon" src="assets/Images/GoIcon.png" alt=""></a>
+                    <a class="navProfileB" href="profile.shtml"><img id="selectedP" class="icon" src="assets/Images/ProfileIcon.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="statsSection">
+            <div class="todayPie">
+                <h5 class="percent">Top 21%</h5>
+                <h2 class="statsRange">Today</h2>
+            </div>
+            <div class="weekPie">
+                <h5 class="percent">Top 4%</h5>
+                <h2 class="statsRange">Week</h2>
+            </div>
+            <div class="monthPie">
+                <h5 class="percent">Top 78%</h5>
+                <h2 class="statsRange">Month</h2>
+            </div>
+        </div>
+    </bod>
+</html>

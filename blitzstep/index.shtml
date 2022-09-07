@@ -1,0 +1,22 @@
+<!--#include file="./partials/header.shtml" -->
+
+        <div id="profile" class="wrapper header-container">
+            <div class="nav-container">
+                <div>
+                    <img class="logoNav" src="assets/Images/BlitzLogoTransparent.png" alt="">
+                </div>
+                <div class="login-buttons">
+                    <a class="signB" href="Home.html">SignOut</a>
+                    <a class="navGoB" href="index.shtml"><img id="selectedH" class="icon" src="assets/Images/HomeIcon.png" alt=""></a>
+                    <a class="navSocialB" href="social.shtml"><img id="selectedG" class="icon" src="assets/Images/GoIcon.png" alt=""></a>
+                    <a class="navProfileB" href="profile.shtml"><img id="selectedP" class="icon" src="assets/Images/ProfileIcon.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-b-container">
+            <button class="mainB" id="mainB">GO</button>
+            <span class="mainBAnim" ></span>
+        </div>
+
+<!--#include file="./partials/footer.shtml" -->
